@@ -1,0 +1,12 @@
+<div ng-show='text'>
+	<h2>You provided: <b>{{text}}</b></h2>
+	<p>You can send this to the service, or just close the popup.</p>
+</div>
+<div ng-show='!text'>
+	<h2>You provided nothing.</h2>
+	<p>Type something to see some magic after a popup closed.</p>
+</div>
+<footer>
+	<button ng-click="dlg.send()" ng-show='text'>Send to service</button>
+	<button ng-click="dlg.close()">Close</button>
+</footer>
